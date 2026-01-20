@@ -1,0 +1,22 @@
+🎤 Instagram Reel Transcript (English)
+==================================================
+
+📁 Source: DTpT8Y4jMie_2026-01-18_08-34-35_UTC.mp3
+🌍 Original Language: hi
+🔄 Translated to English: Yes
+⏱️  Duration: 8 segments
+
+📝 Full Transcript:
+------------------------------
+ Because of that, I was playing games and learning coding And now all the interviews started working So, I just followed one resource To learn C++, code wars, where you will fight your enemies to learn how to code To learn SQL SQL Island, where you have to use SQL query in an island to escape from there To learn Java, coding games, which has great visualizations And most important, to learn Python, check it out If all these resources are in DM, then comment below
+
+🕐 Segments with Timestamps:
+----------------------------------------
+[  0.00s -   2.60s]: Because of that, I was playing games and learning coding
+[  2.60s -   4.68s]: And now all the interviews started working
+[  4.68s -   6.48s]: So, I just followed one resource
+[  6.48s -  10.64s]: To learn C++, code wars, where you will fight your enemies to learn how to code
+[ 10.64s -  17.68s]: To learn SQL SQL Island, where you have to use SQL query in an island to escape from there
+[ 17.68s -  20.88s]: To learn Java, coding games, which has great visualizations
+[ 20.88s -  23.76s]: And most important, to learn Python, check it out
+[ 23.76s -  27.44s]: If all these resources are in DM, then comment below

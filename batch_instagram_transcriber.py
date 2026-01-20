@@ -278,12 +278,15 @@ class BatchInstagramTranscriber:
         self.handle_rate_limiting()
         
         # Try Instaloader first (original method)
+        print("🔧 Trying method 1: Instaloader...")
         try:
             video_path = self._download_with_instaloader(shortcode)
             if video_path:
+                print("✅ SUCCESS: Downloaded using Instaloader")
                 self.record_download_success()
                 return video_path
         except Exception as e:
+            print(f"❌ Instaloader failed: {str(e)[:100]}...")
             error_msg = str(e)
             is_rate_limited = self.record_download_failure(error_msg)
             if is_rate_limited:
@@ -292,27 +295,36 @@ class BatchInstagramTranscriber:
         
         # Fallback to Instagrapi if Instaloader fails
         if self.instagrapi_client:
-            print("🔄 Instaloader failed, trying Instagrapi fallback...")
+            print("🔧 Trying method 2: Instagrapi...")
             video_path = self._download_with_instagrapi(shortcode)
             if video_path:
+                print("✅ SUCCESS: Downloaded using Instagrapi")
                 self.record_download_success()
                 return video_path
+            else:
+                print("❌ Instagrapi failed")
         
         # Final fallback to yt-dlp
         if YTDLP_AVAILABLE:
-            print("🔄 Instagrapi failed, trying yt-dlp fallback...")
+            print("🔧 Trying method 3: yt-dlp...")
             video_path = self._download_with_ytdlp(shortcode)
             if video_path:
+                print("✅ SUCCESS: Downloaded using yt-dlp")
                 self.record_download_success()
                 return video_path
+            else:
+                print("❌ yt-dlp failed")
         
         # Try parth-dl
         if PARTHDL_AVAILABLE:
-            print("🔄 yt-dlp failed, trying parth-dl fallback...")
+            print("🔧 Trying method 4: parth-dl...")
             video_path = self._download_with_parthdl(shortcode)
             if video_path:
+                print("✅ SUCCESS: Downloaded using parth-dl")
                 self.record_download_success()
                 return video_path
+            else:
+                print("❌ parth-dl failed")
         
         print(f"❌ All download methods failed for {shortcode}")
         return None
