@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project Specific
+downloads/
+batch_output/
+test_*/
+*_output/
+*.mp4
+*.mp3
+*.wav
+
+# Rate Limiting State
+rate_limit_state.json
+instagram_rate_limit.json
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Whisper Models Cache
+~/.cache/whisper/
+
+# Test files
+test_*.txt
+single_test.txt
+
+# Credentials (if any)
+.env
+credentials.json
+config.json
+
+# Output directories
+results/
+transcripts/
+audio/
+videos/

@@ -1,0 +1,24 @@
+# Core Dependencies
+openai-whisper>=20231117
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+pydub>=0.25.1
+requests>=2.31.0
+urllib3>=1.26.0
+certifi>=2023.0.0
+
+# Instagram Download Methods
+instaloader>=4.15
+instagrapi>=2.0.0
+yt-dlp>=2023.12.0
+gallery-dl>=1.26.0
+parth-dl>=1.0.0
+
+# Browser Automation (Optional - for selenium method)
+selenium>=4.15.0
+webdriver-manager>=4.0.0
+
+# Additional Utilities
+python-dotenv>=1.0.0
+pathlib2>=2.3.0
